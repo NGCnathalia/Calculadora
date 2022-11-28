@@ -5,6 +5,7 @@
     color:black;
 }
 body{
+    margin: 0;
     background-color: orchid;
 }
 .container{
@@ -13,7 +14,7 @@ body{
     align-items: center;
     height: 100vh; /*me da el tamaño del 100% horizontalmente*/
 }
-.calculator{
+.calculadora{
     display: grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 160px repeat(5, 75px);
@@ -28,7 +29,7 @@ button{
     padding: 0;
     border-radius: 15px;
     font-size: 1.5rem;
-    border: none;
+ 
     background-color: rgb(245, 207, 245);
     box-shadow: 5px 5px 10px -3px #00000044, -5px -5px 15px 3px #00ffc11f;
 }
@@ -36,10 +37,10 @@ button:active{
     background-color: aqua;
 }
 button:focus{
-    outline: rgb(17, 253, 9);/*pa que sirve ??*/
+    outline: none;/*pa que sirve ??*/
 
 }
-.col2{
+.col-2{
     grid-column: span 2;
 }
 .display{
@@ -56,9 +57,9 @@ button:focus{
     word-break: break-all;
     box-shadow:  0 0 0 10px #00000033;
 }
-#valorActual{
+#valor-actual{
     font-size: 2rem;
 }
-#valorAnterior{
+#valor-anterior{
     font-size: 2.5rem;
 }
